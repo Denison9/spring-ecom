@@ -32,7 +32,6 @@ public class OrderService {
         String orderId = "ORD" + UUID.randomUUID().toString().substring(0,8).toUpperCase();
         order.setOrderId(orderId);
         order.setCustomerName(request.customerName());
-        order.setCustomerName(request.customerName());
         order.setEmail(request.email());
         order.setStatus("PLACED");
         order.setOrderDate(LocalDate.now());
